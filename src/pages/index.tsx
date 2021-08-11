@@ -31,13 +31,13 @@ export default function Home(props: HomeProps) {
 
         <CountdownProvider>
           <section>
-            <div>
+            <div className={styles.profileCountdown}>
               <Profile />
               <CompletedChallenges />
               <Countdown />
             </div>
 
-            <div>
+            <div className={styles.challengeBox}>
               <ChallengeBox />
             </div>
           </section>
